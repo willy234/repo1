@@ -1,0 +1,659 @@
+2020-05-19 15:48:45
+Full thread dump Java HotSpot(TM) 64-Bit Server VM (25.72-b15 mixed mode):
+
+"Worker-934" #6524 prio=5 os_prio=0 tid=0x0000000026501800 nid=0x4c74 in Object.wait() [0x000000003ff2f000]
+   java.lang.Thread.State: TIMED_WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	at org.eclipse.core.internal.jobs.WorkerPool.sleep(WorkerPool.java:200)
+	- locked <0x00000000c1485688> (a org.eclipse.core.internal.jobs.WorkerPool)
+	at org.eclipse.core.internal.jobs.WorkerPool.startJob(WorkerPool.java:242)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:58)
+
+"Worker-933" #6523 prio=5 os_prio=0 tid=0x0000000038429800 nid=0x2e14 in Object.wait() [0x0000000046e6e000]
+   java.lang.Thread.State: TIMED_WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	at org.eclipse.core.internal.jobs.WorkerPool.sleep(WorkerPool.java:200)
+	- locked <0x00000000c1485688> (a org.eclipse.core.internal.jobs.WorkerPool)
+	at org.eclipse.core.internal.jobs.WorkerPool.startJob(WorkerPool.java:242)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:58)
+
+"org.eclipse.jdt.internal.ui.text.JavaReconciler" #6441 daemon prio=1 os_prio=-2 tid=0x000000003966a800 nid=0x56a4 in Object.wait() [0x000000004beff000]
+   java.lang.Thread.State: TIMED_WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:183)
+	- locked <0x00000000cc8fc158> (a org.eclipse.jface.text.reconciler.DirtyRegionQueue)
+
+"org.eclipse.jdt.internal.ui.text.JavaReconciler" #6308 daemon prio=1 os_prio=-2 tid=0x0000000036f46800 nid=0x615c in Object.wait() [0x0000000045e6f000]
+   java.lang.Thread.State: TIMED_WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:183)
+	- locked <0x00000000c9a8b4b8> (a org.eclipse.jface.text.reconciler.DirtyRegionQueue)
+
+"org.eclipse.jdt.internal.ui.text.JavaReconciler" #6302 daemon prio=1 os_prio=-2 tid=0x0000000039669000 nid=0x2c44 in Object.wait() [0x000000004425e000]
+   java.lang.Thread.State: TIMED_WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:183)
+	- locked <0x00000000d29800b8> (a org.eclipse.jface.text.reconciler.DirtyRegionQueue)
+
+"HSQLDB Timer @7b8add20" #6100 daemon prio=5 os_prio=0 tid=0x000000002642c000 nid=0x2c60 in Object.wait() [0x000000004dc0f000]
+   java.lang.Thread.State: TIMED_WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	at org.hsqldb.lib.HsqlTimer$TaskQueue.park(Unknown Source)
+	- locked <0x00000000ccd041e0> (a org.hsqldb.lib.HsqlTimer$TaskQueue)
+	at org.hsqldb.lib.HsqlTimer.nextTask(Unknown Source)
+	- locked <0x00000000ccd041e0> (a org.hsqldb.lib.HsqlTimer$TaskQueue)
+	at org.hsqldb.lib.HsqlTimer$TaskRunner.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+"Worker-692: File Transport Cancel Handler" #4705 prio=5 os_prio=0 tid=0x0000000034f0e800 nid=0x4140 waiting on condition [0x0000000059c7f000]
+   java.lang.Thread.State: TIMED_WAITING (sleeping)
+	at java.lang.Thread.sleep(Native Method)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileReader$CancelHandler.run(FileReader.java:157)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+"Worker-691: File Transport Cancel Handler" #4679 prio=5 os_prio=0 tid=0x0000000032790800 nid=0x4950 waiting on condition [0x000000004c0be000]
+   java.lang.Thread.State: TIMED_WAITING (sleeping)
+	at java.lang.Thread.sleep(Native Method)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileReader$CancelHandler.run(FileReader.java:157)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+"Worker-688: File Transport Cancel Handler" #4675 prio=5 os_prio=0 tid=0x0000000023162000 nid=0x3fb0 waiting on condition [0x00000000650ef000]
+   java.lang.Thread.State: TIMED_WAITING (sleeping)
+	at java.lang.Thread.sleep(Native Method)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileReader$CancelHandler.run(FileReader.java:157)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+"Worker-686: File Transport Cancel Handler" #4673 prio=5 os_prio=0 tid=0x0000000035818800 nid=0x365c waiting on condition [0x000000005469f000]
+   java.lang.Thread.State: TIMED_WAITING (sleeping)
+	at java.lang.Thread.sleep(Native Method)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileReader$CancelHandler.run(FileReader.java:157)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+"Worker-681: File Transport Cancel Handler" #4667 prio=5 os_prio=0 tid=0x0000000034f05800 nid=0x5dd0 waiting on condition [0x000000005df0f000]
+   java.lang.Thread.State: TIMED_WAITING (sleeping)
+	at java.lang.Thread.sleep(Native Method)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileReader$CancelHandler.run(FileReader.java:157)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+"Worker-677: File Transport Cancel Handler" #4642 prio=5 os_prio=0 tid=0x0000000024b5c800 nid=0x3eec waiting on condition [0x000000004ce5e000]
+   java.lang.Thread.State: TIMED_WAITING (sleeping)
+	at java.lang.Thread.sleep(Native Method)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileReader$CancelHandler.run(FileReader.java:157)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+"Keep-Alive-SocketCleaner" #4532 daemon prio=8 os_prio=1 tid=0x0000000038e4d000 nid=0x5554 in Object.wait() [0x000000006764f000]
+   java.lang.Thread.State: WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	at sun.net.www.http.KeepAliveStreamCleaner.run(Unknown Source)
+	- locked <0x00000000c2a37490> (a sun.net.www.http.KeepAliveStreamCleaner)
+	at java.lang.Thread.run(Unknown Source)
+
+"Timer-116" #4138 daemon prio=6 os_prio=0 tid=0x0000000036f40800 nid=0x360 in Object.wait() [0x000000004d1bf000]
+   java.lang.Thread.State: WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Unknown Source)
+	at java.util.TimerThread.mainLoop(Unknown Source)
+	- locked <0x00000000ce629940> (a java.util.TaskQueue)
+	at java.util.TimerThread.run(Unknown Source)
+
+"Timer-113" #4088 daemon prio=6 os_prio=0 tid=0x0000000037dda800 nid=0x5158 in Object.wait() [0x000000004c1de000]
+   java.lang.Thread.State: WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Unknown Source)
+	at java.util.TimerThread.mainLoop(Unknown Source)
+	- locked <0x00000000ce6663e0> (a java.util.TaskQueue)
+	at java.util.TimerThread.run(Unknown Source)
+
+"Timer-105" #3111 daemon prio=6 os_prio=0 tid=0x0000000026504800 nid=0x80 in Object.wait() [0x0000000045a2f000]
+   java.lang.Thread.State: WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Unknown Source)
+	at java.util.TimerThread.mainLoop(Unknown Source)
+	- locked <0x00000000c5e048e8> (a java.util.TaskQueue)
+	at java.util.TimerThread.run(Unknown Source)
+
+"Timer-103" #3068 daemon prio=6 os_prio=0 tid=0x0000000034c3b800 nid=0x444c in Object.wait() [0x0000000046a1f000]
+   java.lang.Thread.State: WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Unknown Source)
+	at java.util.TimerThread.mainLoop(Unknown Source)
+	- locked <0x00000000c5e04900> (a java.util.TaskQueue)
+	at java.util.TimerThread.run(Unknown Source)
+
+"Timer-88" #2695 daemon prio=6 os_prio=0 tid=0x0000000032791800 nid=0x2bc8 in Object.wait() [0x0000000043ecf000]
+   java.lang.Thread.State: WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Unknown Source)
+	at java.util.TimerThread.mainLoop(Unknown Source)
+	- locked <0x00000000c728a078> (a java.util.TaskQueue)
+	at java.util.TimerThread.run(Unknown Source)
+
+"Timer-84" #2333 daemon prio=6 os_prio=0 tid=0x0000000024b58800 nid=0x2630 in Object.wait() [0x000000005a3ff000]
+   java.lang.Thread.State: WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Unknown Source)
+	at java.util.TimerThread.mainLoop(Unknown Source)
+	- locked <0x00000000c2b809e8> (a java.util.TaskQueue)
+	at java.util.TimerThread.run(Unknown Source)
+
+"Timer-82" #2294 daemon prio=6 os_prio=0 tid=0x0000000024b5b800 nid=0x49d8 in Object.wait() [0x0000000056b3f000]
+   java.lang.Thread.State: WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Unknown Source)
+	at java.util.TimerThread.mainLoop(Unknown Source)
+	- locked <0x00000000c2100d50> (a java.util.TaskQueue)
+	at java.util.TimerThread.run(Unknown Source)
+
+"Timer-75" #2052 daemon prio=6 os_prio=0 tid=0x0000000032cb1800 nid=0x461c in Object.wait() [0x000000005629f000]
+   java.lang.Thread.State: WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Unknown Source)
+	at java.util.TimerThread.mainLoop(Unknown Source)
+	- locked <0x00000000c0c07d58> (a java.util.TaskQueue)
+	at java.util.TimerThread.run(Unknown Source)
+
+"Timer-73" #1971 daemon prio=6 os_prio=0 tid=0x0000000032cb3000 nid=0x3f50 in Object.wait() [0x0000000052a6f000]
+   java.lang.Thread.State: WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Unknown Source)
+	at java.util.TimerThread.mainLoop(Unknown Source)
+	- locked <0x00000000c728a1f8> (a java.util.TaskQueue)
+	at java.util.TimerThread.run(Unknown Source)
+
+"Timer-67" #1679 daemon prio=6 os_prio=0 tid=0x0000000021ec1800 nid=0x4280 in Object.wait() [0x000000004651f000]
+   java.lang.Thread.State: WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Unknown Source)
+	at java.util.TimerThread.mainLoop(Unknown Source)
+	- locked <0x00000000c2a85e60> (a java.util.TaskQueue)
+	at java.util.TimerThread.run(Unknown Source)
+
+"Timer-65" #1641 daemon prio=6 os_prio=0 tid=0x0000000021ec0000 nid=0x54e8 in Object.wait() [0x000000004626e000]
+   java.lang.Thread.State: WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Unknown Source)
+	at java.util.TimerThread.mainLoop(Unknown Source)
+	- locked <0x00000000c728a090> (a java.util.TaskQueue)
+	at java.util.TimerThread.run(Unknown Source)
+
+"Timer-63" #1616 daemon prio=6 os_prio=0 tid=0x0000000034c39000 nid=0x53e8 in Object.wait() [0x000000004681e000]
+   java.lang.Thread.State: WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Unknown Source)
+	at java.util.TimerThread.mainLoop(Unknown Source)
+	- locked <0x00000000c7304b10> (a java.util.TaskQueue)
+	at java.util.TimerThread.run(Unknown Source)
+
+"Timer-62" #1604 daemon prio=6 os_prio=0 tid=0x0000000034c38800 nid=0x3838 in Object.wait() [0x000000004671f000]
+   java.lang.Thread.State: WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Unknown Source)
+	at java.util.TimerThread.mainLoop(Unknown Source)
+	- locked <0x00000000c7304ae8> (a java.util.TaskQueue)
+	at java.util.TimerThread.run(Unknown Source)
+
+"Timer-60" #1474 daemon prio=6 os_prio=0 tid=0x0000000037dda000 nid=0x5014 in Object.wait() [0x00000000672ee000]
+   java.lang.Thread.State: WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Unknown Source)
+	at java.util.TimerThread.mainLoop(Unknown Source)
+	- locked <0x00000000c728a180> (a java.util.TaskQueue)
+	at java.util.TimerThread.run(Unknown Source)
+
+"Timer-58" #1451 daemon prio=6 os_prio=0 tid=0x000000004fb80000 nid=0x46ac in Object.wait() [0x00000000660ef000]
+   java.lang.Thread.State: WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Unknown Source)
+	at java.util.TimerThread.mainLoop(Unknown Source)
+	- locked <0x00000000c5f09c18> (a java.util.TaskQueue)
+	at java.util.TimerThread.run(Unknown Source)
+
+"Timer-56" #1438 daemon prio=6 os_prio=0 tid=0x0000000037c0b800 nid=0x5430 in Object.wait() [0x0000000065fef000]
+   java.lang.Thread.State: WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Unknown Source)
+	at java.util.TimerThread.mainLoop(Unknown Source)
+	- locked <0x00000000cb806270> (a java.util.TaskQueue)
+	at java.util.TimerThread.run(Unknown Source)
+
+"Timer-54" #1415 daemon prio=6 os_prio=0 tid=0x0000000037c0c000 nid=0x33ac in Object.wait() [0x0000000065eef000]
+   java.lang.Thread.State: WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Unknown Source)
+	at java.util.TimerThread.mainLoop(Unknown Source)
+	- locked <0x00000000c8805d50> (a java.util.TaskQueue)
+	at java.util.TimerThread.run(Unknown Source)
+
+"Timer-52" #1399 daemon prio=6 os_prio=0 tid=0x000000004fb7f800 nid=0x2aac in Object.wait() [0x0000000064bef000]
+   java.lang.Thread.State: WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Unknown Source)
+	at java.util.TimerThread.mainLoop(Unknown Source)
+	- locked <0x00000000cb806258> (a java.util.TaskQueue)
+	at java.util.TimerThread.run(Unknown Source)
+
+"Timer-49" #1377 daemon prio=6 os_prio=0 tid=0x0000000037c05800 nid=0x271c in Object.wait() [0x0000000064aef000]
+   java.lang.Thread.State: WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Unknown Source)
+	at java.util.TimerThread.mainLoop(Unknown Source)
+	- locked <0x00000000c2806848> (a java.util.TaskQueue)
+	at java.util.TimerThread.run(Unknown Source)
+
+"Timer-47" #1351 daemon prio=6 os_prio=0 tid=0x0000000037c0a800 nid=0x4ff4 in Object.wait() [0x000000004871e000]
+   java.lang.Thread.State: WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Unknown Source)
+	at java.util.TimerThread.mainLoop(Unknown Source)
+	- locked <0x00000000c2811f40> (a java.util.TaskQueue)
+	at java.util.TimerThread.run(Unknown Source)
+
+"Timer-44" #1331 daemon prio=6 os_prio=0 tid=0x0000000037c07000 nid=0x53b8 in Object.wait() [0x000000005ba9e000]
+   java.lang.Thread.State: WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Unknown Source)
+	at java.util.TimerThread.mainLoop(Unknown Source)
+	- locked <0x00000000c5f09db0> (a java.util.TaskQueue)
+	at java.util.TimerThread.run(Unknown Source)
+
+"Timer-42" #1317 daemon prio=6 os_prio=0 tid=0x0000000034ef6800 nid=0x50c0 in Object.wait() [0x000000005be0f000]
+   java.lang.Thread.State: WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Unknown Source)
+	at java.util.TimerThread.mainLoop(Unknown Source)
+	- locked <0x00000000c728a168> (a java.util.TaskQueue)
+	at java.util.TimerThread.run(Unknown Source)
+
+"Timer-40" #1302 daemon prio=6 os_prio=0 tid=0x0000000049e8d800 nid=0x5608 in Object.wait() [0x000000004f1ae000]
+   java.lang.Thread.State: WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Unknown Source)
+	at java.util.TimerThread.mainLoop(Unknown Source)
+	- locked <0x00000000c728a0a8> (a java.util.TaskQueue)
+	at java.util.TimerThread.run(Unknown Source)
+
+"Timer-38" #1290 daemon prio=6 os_prio=0 tid=0x0000000037c09000 nid=0x4a84 in Object.wait() [0x000000004f52f000]
+   java.lang.Thread.State: WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Unknown Source)
+	at java.util.TimerThread.mainLoop(Unknown Source)
+	- locked <0x00000000c728a198> (a java.util.TaskQueue)
+	at java.util.TimerThread.run(Unknown Source)
+
+"Timer-36" #1273 daemon prio=6 os_prio=0 tid=0x0000000034ef5000 nid=0x4848 in Object.wait() [0x0000000059fff000]
+   java.lang.Thread.State: WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Unknown Source)
+	at java.util.TimerThread.mainLoop(Unknown Source)
+	- locked <0x00000000c728a1e0> (a java.util.TaskQueue)
+	at java.util.TimerThread.run(Unknown Source)
+
+"Timer-34" #1261 daemon prio=6 os_prio=0 tid=0x0000000049e8d000 nid=0x2eb4 in Object.wait() [0x000000005683f000]
+   java.lang.Thread.State: WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Unknown Source)
+	at java.util.TimerThread.mainLoop(Unknown Source)
+	- locked <0x00000000c728a108> (a java.util.TaskQueue)
+	at java.util.TimerThread.run(Unknown Source)
+
+"Timer-31" #1243 daemon prio=6 os_prio=0 tid=0x0000000037c0a000 nid=0x28e0 in Object.wait() [0x000000004f75f000]
+   java.lang.Thread.State: WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Unknown Source)
+	at java.util.TimerThread.mainLoop(Unknown Source)
+	- locked <0x00000000c728a150> (a java.util.TaskQueue)
+	at java.util.TimerThread.run(Unknown Source)
+
+"Timer-29" #1223 daemon prio=6 os_prio=0 tid=0x000000004fb7e000 nid=0x4018 in Object.wait() [0x000000005693f000]
+   java.lang.Thread.State: WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Unknown Source)
+	at java.util.TimerThread.mainLoop(Unknown Source)
+	- locked <0x00000000c8800d68> (a java.util.TaskQueue)
+	at java.util.TimerThread.run(Unknown Source)
+
+"Timer-27" #1211 daemon prio=6 os_prio=0 tid=0x000000003278f000 nid=0x2d48 in Object.wait() [0x00000000525af000]
+   java.lang.Thread.State: WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Unknown Source)
+	at java.util.TimerThread.mainLoop(Unknown Source)
+	- locked <0x00000000c8800d50> (a java.util.TaskQueue)
+	at java.util.TimerThread.run(Unknown Source)
+
+"Timer-25" #1199 daemon prio=6 os_prio=0 tid=0x000000004fb7d000 nid=0x24bc in Object.wait() [0x00000000526ae000]
+   java.lang.Thread.State: WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Unknown Source)
+	at java.util.TimerThread.mainLoop(Unknown Source)
+	- locked <0x00000000c728a1c8> (a java.util.TaskQueue)
+	at java.util.TimerThread.run(Unknown Source)
+
+"Timer-23" #1181 daemon prio=6 os_prio=0 tid=0x000000004fb7e800 nid=0x32a8 in Object.wait() [0x000000005653f000]
+   java.lang.Thread.State: WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Unknown Source)
+	at java.util.TimerThread.mainLoop(Unknown Source)
+	- locked <0x00000000c728a1b0> (a java.util.TaskQueue)
+	at java.util.TimerThread.run(Unknown Source)
+
+"Timer-20" #1160 daemon prio=6 os_prio=0 tid=0x000000002538a800 nid=0x47b8 in Object.wait() [0x000000005673f000]
+   java.lang.Thread.State: WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Unknown Source)
+	at java.util.TimerThread.mainLoop(Unknown Source)
+	- locked <0x00000000c8805ee8> (a java.util.TaskQueue)
+	at java.util.TimerThread.run(Unknown Source)
+
+"Timer-18" #1149 daemon prio=6 os_prio=0 tid=0x000000002642a800 nid=0x350 in Object.wait() [0x000000005663f000]
+   java.lang.Thread.State: WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Unknown Source)
+	at java.util.TimerThread.mainLoop(Unknown Source)
+	- locked <0x00000000c728a0d8> (a java.util.TaskQueue)
+	at java.util.TimerThread.run(Unknown Source)
+
+"Timer-16" #1132 daemon prio=6 os_prio=0 tid=0x000000001e69f800 nid=0x3e18 in Object.wait() [0x0000000054e9f000]
+   java.lang.Thread.State: WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Unknown Source)
+	at java.util.TimerThread.mainLoop(Unknown Source)
+	- locked <0x00000000c28120d8> (a java.util.TaskQueue)
+	at java.util.TimerThread.run(Unknown Source)
+
+"Timer-14" #1118 daemon prio=6 os_prio=0 tid=0x0000000034efc800 nid=0xad0 in Object.wait() [0x00000000527af000]
+   java.lang.Thread.State: WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Unknown Source)
+	at java.util.TimerThread.mainLoop(Unknown Source)
+	- locked <0x00000000c728a0c0> (a java.util.TaskQueue)
+	at java.util.TimerThread.run(Unknown Source)
+
+"Timer-12" #1062 daemon prio=6 os_prio=0 tid=0x0000000034ef1000 nid=0x1d54 in Object.wait() [0x0000000043dcf000]
+   java.lang.Thread.State: WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Unknown Source)
+	at java.util.TimerThread.mainLoop(Unknown Source)
+	- locked <0x00000000c728a138> (a java.util.TaskQueue)
+	at java.util.TimerThread.run(Unknown Source)
+
+"Timer-10" #1043 daemon prio=6 os_prio=0 tid=0x00000000231bd000 nid=0x3678 in Object.wait() [0x0000000043ccf000]
+   java.lang.Thread.State: WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Unknown Source)
+	at java.util.TimerThread.mainLoop(Unknown Source)
+	- locked <0x00000000c728a0f0> (a java.util.TaskQueue)
+	at java.util.TimerThread.run(Unknown Source)
+
+"Timer-8" #1022 daemon prio=6 os_prio=0 tid=0x0000000024c54800 nid=0x4a64 in Object.wait() [0x000000004345f000]
+   java.lang.Thread.State: WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Unknown Source)
+	at java.util.TimerThread.mainLoop(Unknown Source)
+	- locked <0x00000000c3900168> (a java.util.TaskQueue)
+	at java.util.TimerThread.run(Unknown Source)
+
+"Timer-6" #1002 daemon prio=6 os_prio=0 tid=0x0000000025393000 nid=0x3d0c in Object.wait() [0x000000003f6ae000]
+   java.lang.Thread.State: WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Unknown Source)
+	at java.util.TimerThread.mainLoop(Unknown Source)
+	- locked <0x00000000c728a120> (a java.util.TaskQueue)
+	at java.util.TimerThread.run(Unknown Source)
+
+"Dali Event Handler" #516 prio=6 os_prio=0 tid=0x0000000026431800 nid=0x3f68 in Object.wait() [0x000000003f33f000]
+   java.lang.Thread.State: WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Unknown Source)
+	at org.eclipse.jpt.common.utility.internal.queue.SynchronizedQueue.waitUntilEmptyIs_(SynchronizedQueue.java:134)
+	at org.eclipse.jpt.common.utility.internal.queue.SynchronizedQueue.waitUntilEmptyIs(SynchronizedQueue.java:125)
+	- locked <0x00000000cb806240> (a org.eclipse.jpt.common.utility.internal.queue.SynchronizedQueue)
+	at org.eclipse.jpt.common.utility.internal.queue.SynchronizedQueue.waitUntilNotEmpty(SynchronizedQueue.java:149)
+	at org.eclipse.jpt.common.utility.internal.command.AbstractAsynchronousCommandContext.waitForCommand(AbstractAsynchronousCommandContext.java:154)
+	at org.eclipse.jpt.common.utility.internal.command.AbstractAsynchronousCommandContext$Consumer.waitForProducer(AbstractAsynchronousCommandContext.java:189)
+	at org.eclipse.jpt.common.utility.internal.ConsumerThreadCoordinator$RunnableConsumer.run(ConsumerThreadCoordinator.java:194)
+	at java.lang.Thread.run(Unknown Source)
+
+"Provisioning Event Dispatcher" #72 daemon prio=5 os_prio=0 tid=0x000000001e6a4000 nid=0x470 in Object.wait() [0x000000003474f000]
+   java.lang.Thread.State: WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Unknown Source)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.getNextEvent(EventManager.java:400)
+	- locked <0x00000000c1106368> (a org.eclipse.osgi.framework.eventmgr.EventManager$EventThread)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+"Event Loop Monitor" #55 daemon prio=6 os_prio=0 tid=0x0000000020758000 nid=0x17d4 in Object.wait() [0x00000000313cf000]
+   java.lang.Thread.State: TIMED_WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	at org.eclipse.ui.internal.monitoring.EventLoopMonitorThread.sleepForMillis(EventLoopMonitorThread.java:715)
+	- locked <0x00000000c11069e8> (a java.lang.Object)
+	at org.eclipse.ui.internal.monitoring.EventLoopMonitorThread.run(EventLoopMonitorThread.java:544)
+
+"Thread-13" #52 prio=5 os_prio=0 tid=0x0000000024ac9800 nid=0x4888 waiting on condition [0x0000000030e4f000]
+   java.lang.Thread.State: TIMED_WAITING (sleeping)
+	at java.lang.Thread.sleep(Native Method)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker$UpdateCheckThread.run(UpdateChecker.java:73)
+
+"EventAdmin Async Event Dispatcher Thread" #38 daemon prio=6 os_prio=0 tid=0x0000000024acf000 nid=0x3d44 in Object.wait() [0x000000002d89f000]
+   java.lang.Thread.State: WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Unknown Source)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.getNextEvent(EventManager.java:400)
+	- locked <0x00000000c4602010> (a org.eclipse.osgi.framework.eventmgr.EventManager$EventThread)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+"JavaScript indexing" #33 daemon prio=4 os_prio=-1 tid=0x0000000024ac5000 nid=0x2174 in Object.wait() [0x000000002923f000]
+   java.lang.Thread.State: WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Unknown Source)
+	at org.eclipse.wst.jsdt.internal.core.search.processing.JobManager.run(JobManager.java:370)
+	- locked <0x00000000c4f04510> (a org.eclipse.wst.jsdt.internal.core.search.indexing.IndexManager)
+	at java.lang.Thread.run(Unknown Source)
+
+"Java indexing" #30 daemon prio=4 os_prio=-1 tid=0x0000000024ac6800 nid=0x2d60 in Object.wait() [0x0000000027c7f000]
+   java.lang.Thread.State: WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Unknown Source)
+	at org.eclipse.jdt.internal.core.search.processing.JobManager.run(JobManager.java:378)
+	- locked <0x00000000c5092a18> (a org.eclipse.jdt.internal.core.search.indexing.IndexManager)
+	at java.lang.Thread.run(Unknown Source)
+
+"Git Repository Closer" #28 daemon prio=6 os_prio=0 tid=0x0000000024ac4800 nid=0x2bf4 in Object.wait() [0x000000002434f000]
+   java.lang.Thread.State: WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	- waiting on <0x00000000c5008820> (a java.lang.ref.ReferenceQueue$Lock)
+	at java.lang.ref.ReferenceQueue.remove(Unknown Source)
+	- locked <0x00000000c5008820> (a java.lang.ref.ReferenceQueue$Lock)
+	at java.lang.ref.ReferenceQueue.remove(Unknown Source)
+	at org.eclipse.egit.core.RepositoryCache$Closer.run(RepositoryCache.java:463)
+
+"Bundle File Closer" #27 daemon prio=6 os_prio=0 tid=0x000000001f5b7800 nid=0x4b20 in Object.wait() [0x00000000211de000]
+   java.lang.Thread.State: WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Unknown Source)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.getNextEvent(EventManager.java:400)
+	- locked <0x00000000c1212ea0> (a org.eclipse.osgi.framework.eventmgr.EventManager$EventThread)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+"Gogo shell" #23 prio=5 os_prio=0 tid=0x000000001f5b7000 nid=0x49c4 waiting on condition [0x00000000212de000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000000c1485828> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(Unknown Source)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(Unknown Source)
+	at java.util.concurrent.LinkedBlockingQueue.take(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+"EMF Reference Cleaner" #20 daemon prio=5 os_prio=0 tid=0x000000001f144000 nid=0x3854 in Object.wait() [0x00000000209bf000]
+   java.lang.Thread.State: WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	at java.lang.ref.ReferenceQueue.remove(Unknown Source)
+	- locked <0x00000000c12131a8> (a java.lang.ref.ReferenceQueue$Lock)
+	at java.lang.ref.ReferenceQueue.remove(Unknown Source)
+	at org.eclipse.emf.common.util.CommonUtil$1ReferenceClearingQueuePollingThread.run(CommonUtil.java:70)
+
+"Worker-JM" #19 prio=5 os_prio=0 tid=0x000000001e7bd800 nid=0x40f0 in Object.wait() [0x000000000464f000]
+   java.lang.Thread.State: WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	at org.eclipse.core.internal.jobs.InternalWorker.run(InternalWorker.java:62)
+	- locked <0x00000000c1213210> (a java.util.ArrayList)
+
+"SCR Component Actor" #17 daemon prio=5 os_prio=0 tid=0x000000001f706800 nid=0x3268 in Object.wait() [0x000000000429f000]
+   java.lang.Thread.State: WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	- waiting on <0x00000000c12131d8> (a java.util.LinkedList)
+	at java.lang.Object.wait(Unknown Source)
+	at org.apache.felix.scr.impl.ComponentActorThread.run(ComponentActorThread.java:83)
+	- locked <0x00000000c12131d8> (a java.util.LinkedList)
+	at java.lang.Thread.run(Unknown Source)
+
+"Start Level: Equinox Container: 83dc7b6e-692d-42b6-9640-359ccc2e2a89" #16 daemon prio=5 os_prio=0 tid=0x000000001f738800 nid=0x4f24 in Object.wait() [0x000000000419f000]
+   java.lang.Thread.State: WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	- waiting on <0x00000000c1312d20> (a org.eclipse.osgi.framework.eventmgr.EventManager$EventThread)
+	at java.lang.Object.wait(Unknown Source)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.getNextEvent(EventManager.java:400)
+	- locked <0x00000000c1312d20> (a org.eclipse.osgi.framework.eventmgr.EventManager$EventThread)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+"Framework Event Dispatcher: Equinox Container: 83dc7b6e-692d-42b6-9640-359ccc2e2a89" #15 daemon prio=5 os_prio=0 tid=0x000000001f4c0800 nid=0x322c in Object.wait() [0x000000000409f000]
+   java.lang.Thread.State: WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Unknown Source)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.getNextEvent(EventManager.java:400)
+	- locked <0x00000000c1213228> (a org.eclipse.osgi.framework.eventmgr.EventManager$EventThread)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+"Active Thread: Equinox Container: 83dc7b6e-692d-42b6-9640-359ccc2e2a89" #13 prio=5 os_prio=0 tid=0x000000001f4eb800 nid=0x1cd0 waiting on condition [0x0000000003f9e000]
+   java.lang.Thread.State: TIMED_WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000000c0d80170> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.parkNanos(Unknown Source)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+"Service Thread" #11 daemon prio=9 os_prio=0 tid=0x000000001caf1800 nid=0x43ac runnable [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+"C1 CompilerThread3" #10 daemon prio=9 os_prio=2 tid=0x000000001ca88800 nid=0x3550 waiting on condition [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+"C2 CompilerThread2" #9 daemon prio=9 os_prio=2 tid=0x000000001ca74000 nid=0x2f1c waiting on condition [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+"C2 CompilerThread1" #8 daemon prio=9 os_prio=2 tid=0x000000001ca71000 nid=0x36a4 waiting on condition [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+"C2 CompilerThread0" #7 daemon prio=9 os_prio=2 tid=0x000000001ca70800 nid=0x29cc waiting on condition [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+"Attach Listener" #6 daemon prio=5 os_prio=2 tid=0x000000001ca6f800 nid=0x610 waiting on condition [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+"Signal Dispatcher" #5 daemon prio=9 os_prio=2 tid=0x000000001ca6f000 nid=0x3484 runnable [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+"Surrogate Locker Thread (Concurrent GC)" #4 daemon prio=9 os_prio=0 tid=0x000000001ca6a000 nid=0x4ab8 waiting on condition [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+"Finalizer" #3 daemon prio=8 os_prio=1 tid=0x000000001c9ed800 nid=0x3bd0 in Object.wait() [0x000000001d78f000]
+   java.lang.Thread.State: WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	at java.lang.ref.ReferenceQueue.remove(Unknown Source)
+	- locked <0x00000000c00cedd0> (a java.lang.ref.ReferenceQueue$Lock)
+	at java.lang.ref.ReferenceQueue.remove(Unknown Source)
+	at java.lang.ref.Finalizer$FinalizerThread.run(Unknown Source)
+
+"Reference Handler" #2 daemon prio=10 os_prio=2 tid=0x000000001c9e4800 nid=0xc8 in Object.wait() [0x000000001d68f000]
+   java.lang.Thread.State: WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Unknown Source)
+	at java.lang.ref.Reference.tryHandlePending(Unknown Source)
+	- locked <0x00000000c00cedc0> (a java.lang.ref.Reference$Lock)
+	at java.lang.ref.Reference$ReferenceHandler.run(Unknown Source)
+
+"main" #1 prio=6 os_prio=0 tid=0x0000000005d50800 nid=0x1748 runnable [0x00000000010fd000]
+   java.lang.Thread.State: RUNNABLE
+	at org.eclipse.swt.internal.win32.OS.WaitMessage(Native Method)
+	at org.eclipse.swt.widgets.Display.sleep(Display.java:4596)
+	at org.eclipse.ui.application.WorkbenchAdvisor.eventLoopIdle(WorkbenchAdvisor.java:360)
+	at org.eclipse.ui.internal.ide.application.IDEWorkbenchAdvisor.eventLoopIdle(IDEWorkbenchAdvisor.java:949)
+	at org.eclipse.ui.internal.Workbench$1.eventLoopIdle(Workbench.java:483)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1165)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1049)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:660)
+	at org.eclipse.ui.internal.Workbench$$Lambda$26/1750956965.run(Unknown Source)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:559)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:154)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:150)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+"VM Thread" os_prio=2 tid=0x000000001c9e2000 nid=0x41c4 runnable 
+
+"Gang worker#0 (Parallel GC Threads)" os_prio=2 tid=0x0000000005d69800 nid=0x4670 runnable 
+
+"Gang worker#1 (Parallel GC Threads)" os_prio=2 tid=0x0000000005d6c000 nid=0x2d14 runnable 
+
+"Gang worker#2 (Parallel GC Threads)" os_prio=2 tid=0x0000000005d6d800 nid=0x3244 runnable 
+
+"Gang worker#3 (Parallel GC Threads)" os_prio=2 tid=0x0000000005d72000 nid=0x29c0 runnable 
+
+"Gang worker#4 (Parallel GC Threads)" os_prio=2 tid=0x0000000005d73000 nid=0x361c runnable 
+
+"Gang worker#5 (Parallel GC Threads)" os_prio=2 tid=0x0000000005d74000 nid=0x490c runnable 
+
+"Gang worker#6 (Parallel GC Threads)" os_prio=2 tid=0x0000000005d77000 nid=0xf90 runnable 
+
+"Gang worker#7 (Parallel GC Threads)" os_prio=2 tid=0x0000000005d78000 nid=0x4430 runnable 
+
+"G1 Main Concurrent Mark GC Thread" os_prio=2 tid=0x0000000005de2800 nid=0x20a0 runnable 
+
+"Gang worker#0 (G1 Parallel Marking Threads)" os_prio=2 tid=0x0000000005de3800 nid=0x2240 runnable 
+
+"Gang worker#1 (G1 Parallel Marking Threads)" os_prio=2 tid=0x0000000005de4000 nid=0x1fe0 runnable 
+
+"G1 Concurrent Refinement Thread#0" os_prio=2 tid=0x0000000005d8e800 nid=0x2fa8 runnable 
+
+"G1 Concurrent Refinement Thread#1" os_prio=2 tid=0x0000000005d87800 nid=0x3968 runnable 
+
+"G1 Concurrent Refinement Thread#2" os_prio=2 tid=0x0000000005d86800 nid=0xc1c runnable 
+
+"G1 Concurrent Refinement Thread#3" os_prio=2 tid=0x0000000005d85000 nid=0x4ef0 runnable 
+
+"G1 Concurrent Refinement Thread#4" os_prio=2 tid=0x0000000005d80000 nid=0x2f88 runnable 
+
+"G1 Concurrent Refinement Thread#5" os_prio=2 tid=0x0000000005d7f000 nid=0x4ed4 runnable 
+
+"G1 Concurrent Refinement Thread#6" os_prio=2 tid=0x0000000005d7c000 nid=0x17ac runnable 
+
+"G1 Concurrent Refinement Thread#7" os_prio=2 tid=0x0000000005d7b000 nid=0x32bc runnable 
+
+"G1 Concurrent Refinement Thread#8" os_prio=2 tid=0x0000000005d7a000 nid=0x4bb0 runnable 
+
+"String Deduplication Thread" os_prio=2 tid=0x000000001c836800 nid=0x4e20 runnable 
+
+"VM Periodic Task Thread" os_prio=2 tid=0x000000001cb6b000 nid=0x4e14 waiting on condition 
+
+JNI global references: 3388
+
